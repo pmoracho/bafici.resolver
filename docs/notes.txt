@@ -1,0 +1,11 @@
+Convertir a ICO
+
+/cygdrive/d/pm/bin/ImageMagick-6.4.8-7/convert app.png  \
+          \( -clone 0 -resize 16x16 \) \
+          \( -clone 0 -resize 32x32 \) \
+          \( -clone 0 -resize 48x48 \) \
+          \( -clone 0 -resize 64x64 \) \
+         app.ico
+
+Compilar .ui
+pyuic4.bat MainWindow.ui > MainWindow.py
